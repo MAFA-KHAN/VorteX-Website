@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VorteX.com</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="productstyle.css">
+    <link rel="stylesheet" href="featuredstyle.css">
+<script  src="script.js" defer></script>
+</head>
+  
+<body>
+     <!-- Nav-Bar Section -->
+     <header>
+        <div class="logo">
+        <a href="index.html">VorteX</a>
+        </div>
+        <nav>
+<ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="main.html">Products</a></li>
+</ul>
+<a class="out" href="contact us.html"><button>Contact Us</button></a>
+        </nav>
+    
+        <div class="icons">
+            <input type="text" placeholder="Search for products..." id="search-bar">
+            <div class="cart-container">
+            <i class='bx bx-cart' ></i>
+            <p class="cart">Cart</p>
+            </div>
+          </div>
+     </header>
+
+     <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to VorteX</h1>
+            <p>Your hub for the latest electronics and gadgets</p>
+            <a href="login.html" class="btn">Login</a>
+        </div> 
+    </section>
+
+
+    <!-- shop by category-->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-track">
+                <div class="category">
+                    <img src="drone_1.jpg" alt="Image not found" onclick="openPopup('Drone_1.jpg')">
+                    <a href="2product.html" href="">Drone</a>
+                </div>
+                <div class="category">
+                    <img src="helmet_1.jpg" alt="Image not found" onclick="openPopup('helmet_1.jpg')">
+                    <a href="3product.html">Smart Helmet</a>
+                </div>
+                <div class="category">
+                    <img src="finger print" alt="Image not found" onclick="openPopup('Fingerprint_1.jpg')">
+                    <a href="5product.html">Fingerprint Lock</a>
+                </div>
+                <div class="category">
+                    <img src="go pro_1.jpg" alt="Image not found" onclick="openPopup('go pro_1.jpg')">
+                    <a href="1product.html">Go Pro</a>
+                </div>
+                <div class="category">
+                    <img src="mainpower station" alt="Image not found" onclick="openPopup('station.jpg')">
+                    <a href="4product.html">All in one power station</a>
+                </div>
+                <div class="category">
+                    <img src="air.jpg" alt="Image not found" onclick="openPopup('air.jpg')">
+                    <a href="6product.html">Air Puifier</a>
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      <img id="popup-img" src="" alt="">
+    </div>
+    <script src="product.js"></script>
+
+
+        <!-- Featured Products  -->
+    <div class="featured-products-container">
+        <h class="featured-title">Featured Products</h>
+        <div class="featured-products">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="helmet_1.jpg" alt="Image not found">
+                <h2>Smart Helmet</h2>
+                <p>Experience advanced safety and modern convenience with our Smart Helmet.</p>
+                <div class="price">$249.99</div>
+             <a href="3product.html" >  <button>Buy Now</button></a>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="go pro_1.jpg" alt="Image not found">
+                <h2>GoPro Camera</h2>
+                <p>Capture every adventure with the clarity and durability of GoPro.</p>
+                <div class="price">$399.99</div>
+                <a href="1product.html" >  <button>Buy Now</button></a>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="drone_1.jpg" alt="Image not found">
+                <h2>Drone</h2>
+                <p>Stay connected and track your fitness with our latest Smart Watch.</p>
+                <div class="price">$199.99</div>
+                <a href="2product.html" >  <button>Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VorteX. All rights reserved.</p>
+        <ul class="footer-links">
+          
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><img src="book.jpg" alt="Facebook"></a>
+            <a href="#"><img src="Twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

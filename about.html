@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Vortex - Electronic Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: rgb(1, 4, 86);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+         .logo a
+         {
+            cursor: pointer;
+            margin: 0;
+            font-size: xx-large;
+            text-decoration: none;
+            color: #edf0f1;
+  
+}
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00a8ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(1, 4, 86, 0.8), rgba(1, 4, 86, 0.8)),
+                        url('https://source.unsplash.com/random/1920x1080/?technology') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+
+       .hero 
+
+       {
+         height: 100vh;
+         background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 86, 0.8)),
+         url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070') center/cover;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         color: white;
+         background-attachment: fixed; /* Added for parallax effect */
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            color: rgb(1, 4, 86);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            color: rgb(1, 4, 86);
+            margin-bottom: 1rem;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: #f8f9fa;
+            padding: 5rem 2rem;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            color: rgb(1, 4, 86);
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .team-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+     .member-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .team-member h3 {
+            color: rgb(1, 4, 86);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: rgb(1, 4, 86);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">VORTEX</a></div>
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="main.html">Products</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Vortex</h1>
+            <p>Innovating the Future of Electronics</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>At Vortex, we are passionate about innovation and technology. Established in 2010, our mission is to design and manufacture cutting-edge electronic products that simplify and enhance everyday life.</p>
+            
+            <div class="features">
+                <div class="feature-card" id="innovation">
+                    <h3>Innovation</h3>
+                    <p>We embrace creativity and forward-thinking to design products that meet tomorrow's needs.</p>
+                </div>
+                <div class="feature-card" id="quality">
+                    <h3>Quality</h3>
+                    <p>Our rigorous standards ensure reliability and excellence in every product we deliver.</p>
+                </div>
+                <div class="feature-card" id="sustainability">
+                    <h3>Sustainability</h3>
+                    <p>We are committed to reducing our environmental footprint and promoting eco-friendly practices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Our Leadership</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                <div class="member-image" style="background-image: url('Fahad.jpg');"></div>
+                <h3>Muhammad Fahad Haider</h3>
+                <p>CEO</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image" style="background-image: url('Shahbaz.jpg');"></div>
+                    <h3>Shahbaz Abrar</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h3>Maham Fatima</h3>
+                    <p>Head of Design</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vortex Electronics. All rights reserved. | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add animation to feature cards on scroll
+            const featureCards = document.querySelectorAll('.feature-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            featureCards.forEach(card => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+
+            // Active navigation link highlighting
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
